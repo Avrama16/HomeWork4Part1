@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var wellcomeLable: UILabel!
+    @IBOutlet weak var sendHomeworkButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        wellcomeLable.text = "Wellcome"
     }
 
 
+    @IBAction func SendHomeWorkActoin(_ sender: UIButton) {
+        wellcomeLable.text = "Good job!"
+    }
 }
 
